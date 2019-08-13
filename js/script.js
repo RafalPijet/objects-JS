@@ -65,4 +65,16 @@
     console.log("\n");
     iPhone7.howMuchCost(2);
     iPhone7.howMuchCost(7);
+
+    // var request = new XMLHttpRequest();
+    // request.open("GET", "http://api.icndb.com/jokes/random"); //http://api.icndb.com/jokes/random
+    // request.onload = function () {
+    //
+    //     if (request.status == 200) {
+    //         console.log(request.response);
+    //     } else {
+    //         console.log("nothing");
+    //     }
+    // };
+    // request.send();
 })();
