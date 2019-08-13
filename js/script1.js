@@ -16,4 +16,22 @@
     const Audi = new Car("Audi", "A6", "white", 28000);
     Bmw.showInfo();
     Audi.showInfo();
+
+    function Button(text) {
+        this.text = text || "Hello";
+    }
+
+    Button.prototype.create = function () {
+        let self = this;
+        this.element = document.createElement("button");
+        this.element.innerText = this.text;
+        document.body.appendChild(this.element);
+        this.element.addEventListener("click", function () {
+            alert(self.text);
+        })
+    };
+    let btn1 = new Button();
+    btn1.create();
+    let btn2 = new Button("Wow");
+    btn2.create();
 })();
